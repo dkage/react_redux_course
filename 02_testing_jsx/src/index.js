@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 const App = () => {
     return (
       <div>
-          <label className={"label"} for="name">
+          <label className={"label"} for="name"> {/*Use 'className' instead 'class' to avoid collision with class JS*/}
               Enter name:
           </label>
           <input id={"name"} type={"text"}/>
