@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom';
 
 // React component
 const App = () => {
-    const buttonText = 'Click right here';
+    const buttonText = { text: 'Click right here'};
+    const style_button = {backgroundColor: 'blue', color: 'white'};
 
     return (
       <div>
@@ -12,8 +13,8 @@ const App = () => {
               Enter name:
           </label>
           <input id={"name"} type={"text"}/>
-          <button style={{backgroundColor: 'blue', color: 'white'}}>
-              {buttonText}
+          <button style={style_button}>
+              {buttonText.text}
           </button>
       </div>
     );
