@@ -24,6 +24,34 @@ const App = () => {
                     <div className={"text"}>Test comment for dummy user</div>
                 </div>
             </div>
+            <div className={'comment'}>
+                <a href={'/'} className={"avatar"}>
+                    <img alt={"avatar"} src={faker.image.avatar()}/>
+                </a>
+                <div className={"content"}>
+                    <a href={"/"} className={"author"}>
+                        Jam
+                    </a>
+                    <div>
+                        <span className={"date"}>Today at 20:00</span>
+                    </div>
+                    <div className={"text"}>Test 111 comment for dummy user</div>
+                </div>
+            </div>
+            <div className={'comment'}>
+                <a href={'/'} className={"avatar"}>
+                    <img alt={"avatar"} src={faker.image.avatar()}/>
+                </a>
+                <div className={"content"}>
+                    <a href={"/"} className={"author"}>
+                        Bam
+                    </a>
+                    <div>
+                        <span className={"date"}>Today at 19:00</span>
+                    </div>
+                    <div className={"text"}>Test 222 comment for dummy user</div>
+                </div>
+            </div>
         </div>
     );
 };
