@@ -12,9 +12,9 @@ const CommentDetail = props => {
                 {props.author}
             </a>
             <div>
-                <span className={"date"}>Today at 19:00</span>
+                <span className={"date"}>{props.date}</span>
             </div>
-            <div className={"text"}>Test 222 comment for dummy user</div>
+            <div className={"text"}>{props.text}</div>
         </div>
     </div>
     )};
