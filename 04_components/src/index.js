@@ -1,58 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import faker from 'faker';
-
-function getTime() {
-    return (new Date()).toLocaleTimeString()
-}
+import CommentDetail from './CommentDetail';
 
 // Creates a functional component
 const App = () => {
     return (
         <div className={'ui container comments'}>
-            <div className={'comment'}>
-                <a href={'/'} className={"avatar"}>
-                    <img alt={"avatar"} src={faker.image.avatar()}/>
-                </a>
-                <div className={"content"}>
-                    <a href={"/"} className={"author"}>
-                        Sam
-                    </a>
-                    <div>
-                        <span className={"date"}>Today at 18:00</span>
-                    </div>
-                    <div className={"text"}>Test comment for dummy user</div>
-                </div>
-            </div>
-            <div className={'comment'}>
-                <a href={'/'} className={"avatar"}>
-                    <img alt={"avatar"} src={faker.image.avatar()}/>
-                </a>
-                <div className={"content"}>
-                    <a href={"/"} className={"author"}>
-                        Jam
-                    </a>
-                    <div>
-                        <span className={"date"}>Today at 20:00</span>
-                    </div>
-                    <div className={"text"}>Test 111 comment for dummy user</div>
-                </div>
-            </div>
-            <div className={'comment'}>
-                <a href={'/'} className={"avatar"}>
-                    <img alt={"avatar"} src={faker.image.avatar()}/>
-                </a>
-                <div className={"content"}>
-                    <a href={"/"} className={"author"}>
-                        Bam
-                    </a>
-                    <div>
-                        <span className={"date"}>Today at 19:00</span>
-                    </div>
-                    <div className={"text"}>Test 222 comment for dummy user</div>
-                </div>
-            </div>
+            <CommentDetail/>
         </div>
+
     );
 };
 
