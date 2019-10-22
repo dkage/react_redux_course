@@ -7,10 +7,10 @@ import faker from 'faker'
 const App = () => {
     return (
         <div className={'ui container comments'}>
-            <CommentDetail author="Sam"  date="Yesterday" text={faker.lorem.paragraph()}/>
-            <CommentDetail author="Jane" date="Eight hours ago" text={faker.lorem.paragraph()}/>
-            <CommentDetail author="Bam"  date="Five hours ago" text={faker.lorem.paragraph()}/>
-            <CommentDetail author="Tim"  date="One second ago" text={faker.lorem.paragraph()}/>
+            <CommentDetail userAvatar={faker.image.avatar()} author="Sam"  date="Yesterday"       text={faker.lorem.paragraph()}/>
+            <CommentDetail userAvatar={faker.image.avatar()} author="Jane" date="Eight hours ago" text={faker.lorem.paragraph()}/>
+            <CommentDetail userAvatar={faker.image.avatar()} author="Bam"  date="Five hours ago"  text={faker.lorem.paragraph()}/>
+            <CommentDetail userAvatar={faker.image.avatar()} author="Tim"  date="One second ago"  text={faker.lorem.paragraph()}/>
         </div>
 
     );
