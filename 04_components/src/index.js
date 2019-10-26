@@ -11,12 +11,15 @@ const App = () => {
             <ApprovalCard>
                 <CommentDetail userAvatar={faker.image.avatar()} author="Sam"  date="Yesterday"       text={faker.lorem.paragraph()}/>
             </ApprovalCard>
+
             <ApprovalCard>
                 <CommentDetail userAvatar={faker.image.avatar()} author="Jane" date="Eight hours ago" text={faker.lorem.paragraph()}/>
             </ApprovalCard>
+
             <ApprovalCard>
                 <CommentDetail userAvatar={faker.image.avatar()} author="Bam"  date="Five hours ago"  text={faker.lorem.paragraph()}/>
             </ApprovalCard>
+
             <ApprovalCard>
                 <CommentDetail userAvatar={faker.image.avatar()} author="Tim"  date="One second ago"  text={faker.lorem.paragraph()}/>
             </ApprovalCard>
