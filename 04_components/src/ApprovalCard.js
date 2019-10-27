@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Card from './Card.js'
 
 const ApprovalCard = (props) => {
 
     return(
-        <div className={'ui card'}>
+        <Card>
             <div className={'content'}>
                 {props.children}
             </div>
@@ -14,7 +14,7 @@ const ApprovalCard = (props) => {
                     <div className={'ui basic red button'}>Refuse</div>
                 </div>
             </div>
-        </div>
+        </Card>
     )};
 
 

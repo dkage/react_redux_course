@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import CommentDetail from './CommentDetail';
 import ApprovalCard from './ApprovalCard';
-import faker from 'faker'
+import faker from 'faker';
+import Segment from './Segment';
 
-// Creates a functional component
+
 const App = () => {
     return (
         <div className={'ui container comments'}>
@@ -30,8 +31,11 @@ const App = () => {
             <ApprovalCard>
                 <CommentDetail userAvatar={faker.image.avatar()} author="Tim"  date="One second ago"  text={faker.lorem.paragraph()}/>
             </ApprovalCard>
-        </div>
 
+            <Segment>
+                'Testing'
+            </Segment>
+        </div>
     );
 };
 
